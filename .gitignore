@@ -35,6 +35,5 @@ ehthumbs.db
 Thumbs.db
 
 # Project-specific builds & outputs
-publish/
 run_api/
 *.log
