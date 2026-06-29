@@ -1,4 +1,6 @@
 using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.ServiceProcess;
 using ExamGuard.Agent.Models;
 
 namespace ExamGuard.Agent.Services;
@@ -17,9 +19,10 @@ public class ProcessScanner
 
     public CheckResult Scan()
     {
-        var processes = Process.GetProcesses();
         var detectedApps = new List<DetectedApp>();
 
+        // 1. Scan Processes
+        var processes = Process.GetProcesses();
         foreach (var process in processes)
         {
             try
@@ -38,7 +41,7 @@ public class ProcessScanner
                     detectedApps.Add(new DetectedApp
                     {
                         Name = processName,
-                        Description = "Phát hiện dịch vụ điều khiển từ xa chạy nền"
+                        Description = "Phát hiện tiến trình dịch vụ điều khiển từ xa đang chạy"
                     });
                 }
             }
@@ -49,6 +52,42 @@ public class ProcessScanner
             finally
             {
                 process.Dispose();
+            }
+        }
+
+        // 2. Scan Windows Services (only on Windows)
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+        {
+            try
+            {
+                var services = ServiceController.GetServices();
+                foreach (var service in services)
+                {
+                    try
+                    {
+                        var serviceName = service.ServiceName;
+                        if (_suspiciousServiceProcessNames.Contains(serviceName) && service.Status == ServiceControllerStatus.Running)
+                        {
+                            detectedApps.Add(new DetectedApp
+                            {
+                                Name = serviceName,
+                                Description = "Phát hiện dịch vụ điều khiển từ xa chạy nền"
+                            });
+                        }
+                    }
+                    catch
+                    {
+                        // Ignore inaccessible service details.
+                    }
+                    finally
+                    {
+                        service.Dispose();
+                    }
+                }
+            }
+            catch
+            {
+                // Ignore if we can't get services (e.g. permission issues)
             }
         }
 

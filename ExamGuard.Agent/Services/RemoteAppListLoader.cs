@@ -204,14 +204,20 @@ public class RemoteAppListLoader
     private static readonly string[] DefaultSuspiciousServiceProcessNames =
     {
         // Services that can keep a machine remotely reachable without the main UI.
+        "TeamViewer",
         "TeamViewer_Service",
         "TeamViewService",
+        "AnyDesk",
+        "RustDesk",
         "remoting_host",
         "chromoting",
         "tvnserver",
         "uvnc_service",
         "winvnc",
-        "vncserver"
+        "vncserver",
+        "SplashtopRemoteService",
+        "LogMeIn",
+        "RServer3"
     };
 
     public IReadOnlyList<string> LoadNames()
