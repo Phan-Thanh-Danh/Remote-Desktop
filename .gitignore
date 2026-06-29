@@ -1,23 +1,22 @@
-# .NET
-bin/
-obj/
-
-# Node.js
-node_modules/
-dist/
-build/
-.next/
-out/
-.nuxt/
-.output/
-
-# Common
-.vscode/
-.vs/
+# .NET / C#
+[Bb]in/
+[Oo]bj/
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
+
+# Node.js / Vue Frontend
+node_modules/
+dist/
+dist-ssr/
+build/
+.npm/
+
+# IDE / Editor
+.vscode/
+.vs/
+.idea/
 
 # Environment variables
 .env
@@ -25,3 +24,17 @@ out/
 .env.development.local
 .env.test.local
 .env.production.local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project-specific builds & outputs
+publish/
+run_api/
+*.log
