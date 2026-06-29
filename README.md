@@ -25,8 +25,8 @@ You can download the pre-compiled, standalone **ExamGuard Agent** tools directly
 | | ARM64 (Snapdragon) | [⬇️(win-arm64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/win-arm64/ExamGuard.Agent.exe) |
 | **🍎 macOS** | Apple Silicon (M1/M2/M3) | [⬇️(osx-arm64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/osx-arm64/ExamGuard.Agent) |
 | | Intel (x64) | [⬇️(osx-x64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/osx-x64/ExamGuard.Agent) |
-| **🐧 Linux** | x64 | [⬇️](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/linux-x64/ExamGuard.Agent) |
-| | ARM64 (Raspberry Pi, v.v.) | [⬇️](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/linux-arm64/ExamGuard.Agent) |
+| **🐧 Linux** | x64 | [⬇️(linux-arm64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/linux-x64/ExamGuard.Agent) |
+| | ARM64 (Raspberry Pi, v.v.) | [⬇️(linux-arm64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/linux-arm64/ExamGuard.Agent) |
 
 > ⚠️ **Note for macOS / Linux users:** After downloading, you may need to make the file executable by running `chmod +x ExamGuard.Agent` in your terminal.
 
