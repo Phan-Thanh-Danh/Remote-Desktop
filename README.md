@@ -20,13 +20,13 @@ You can download the pre-compiled, standalone **ExamGuard Agent** tools directly
 
 | Platform | Architecture | Download Link |
 | :--- | :--- | :--- |
-| **🪟 Windows** | x64 (64-bit) | [⬇️ Tải xuống Agent (win-x64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/win-x64/ExamGuard.Agent.exe) |
-| | x86 (32-bit) | [⬇️ Tải xuống Agent (win-x86)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/win-x86/ExamGuard.Agent.exe) |
-| | ARM64 (Snapdragon) | [⬇️ Tải xuống Agent (win-arm64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/win-arm64/ExamGuard.Agent.exe) |
-| **🍎 macOS** | Apple Silicon (M1/M2/M3) | [⬇️ Tải xuống Agent (osx-arm64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/osx-arm64/ExamGuard.Agent) |
-| | Intel (x64) | [⬇️ Tải xuống Agent (osx-x64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/osx-x64/ExamGuard.Agent) |
-| **🐧 Linux** | x64 | [⬇️ Tải xuống Agent (linux-x64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/linux-x64/ExamGuard.Agent) |
-| | ARM64 (Raspberry Pi, v.v.) | [⬇️ Tải xuống Agent (linux-arm64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/linux-arm64/ExamGuard.Agent) |
+| **🪟 Windows** | x64 (64-bit) | [⬇️(win-x64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/win-x64/ExamGuard.Agent.exe) |
+| | x86 (32-bit) | [⬇️(win-x86)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/win-x86/ExamGuard.Agent.exe) |
+| | ARM64 (Snapdragon) | [⬇️(win-arm64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/win-arm64/ExamGuard.Agent.exe) |
+| **🍎 macOS** | Apple Silicon (M1/M2/M3) | [⬇️(osx-arm64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/osx-arm64/ExamGuard.Agent) |
+| | Intel (x64) | [⬇️(osx-x64)](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/osx-x64/ExamGuard.Agent) |
+| **🐧 Linux** | x64 | [⬇️](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/linux-x64/ExamGuard.Agent) |
+| | ARM64 (Raspberry Pi, v.v.) | [⬇️](https://github.com/Phan-Thanh-Danh/Remote-Desktop/raw/main/publish/linux-arm64/ExamGuard.Agent) |
 
 > ⚠️ **Note for macOS / Linux users:** After downloading, you may need to make the file executable by running `chmod +x ExamGuard.Agent` in your terminal.
 
