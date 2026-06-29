@@ -5,7 +5,7 @@ echo.
 set PROJECT_PATH=ExamGuard.Agent\ExamGuard.Agent.csproj
 set OUTPUT_DIR=publish
 
-set BUILD_FLAGS=-c Release --self-contained -p:PublishSingleFile=true -p:DebugType=None -p:DebugSymbols=false -p:IsTransformWebConfigDisabled=true
+set BUILD_FLAGS=-c Release --self-contained -p:PublishSingleFile=true -p:DebugType=None -p:DebugSymbols=false -p:IsTransformWebConfigDisabled=true -p:PublishTrimmed=true -p:EnableCompressionInSingleFile=true
 
 echo [1] Build cho Windows x64...
 dotnet publish "%PROJECT_PATH%" -r win-x64 %BUILD_FLAGS% -o "%OUTPUT_DIR%\win-x64"
